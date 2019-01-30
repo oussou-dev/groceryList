@@ -1,2 +1,0 @@
-# groceryList
-Created with CodeSandbox
