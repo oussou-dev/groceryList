@@ -21,6 +21,7 @@ form.addEventListener("submit", function(e) {
 		addItem(value)
 
 		// add to localStorage
+		addStorage(value)
 	}
 })
 
@@ -75,4 +76,16 @@ function addItem(item) {
 
 	// show feedback
 	showFeedback(feedback, "item added to the list", "alert-success")
+}
+
+// add to localStorage
+function addStorage(value) {
+	let items
+	if (localStorage.getItem("grocery-list")) {
+		items = JSON.parse(localStorage.getItem("grocery-list"))
+	} else {
+		items = []
+	}
+	items.push(value)
+	localStorage.setItem("grocery-list", JSON.stringify(items))
 }
