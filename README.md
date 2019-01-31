@@ -27,17 +27,17 @@ _Note: You may need to add “sudo” in front of any global commands to install
 
 ## Features
 
-|                           |                                     |
-| ------------------------- | ----------------------------------- |
-| [ ] Adding Bootstrap 4    | [ ] Alert notifications             |
-| [ ] Setting up todos list | [ ] setItem for localStorage        |
-| [ ] Create item           | [ ] removeItem for localStorage     |
-| [ ] Delete item           | [ ] Display items from localStorage |
-| [ ] Update item           | [ ] Clear localStorage              |
-| [ ] Clear all items       | [ ] Adding Font Awesome             |
+|                          |                                     |
+| ------------------------ | ----------------------------------- |
+| [x] Adding BS4 & Font A. | [x] Alert notifications             |
+| [x] Create item          | [x] setItem for localStorage        |
+| [x] Delete item          | [x] removeItem for localStorage     |
+| [ ] Update item          | [x] Display items from localStorage |
+| [ ] Check item           | [x] Clear localStorage              |
+| [x] Clear all items      | [ ] Check item for localStorage     |
 
 ## ScreenShots
 
-| ![Screenshot1](https://github.com/oussou-dev/CRUDapp/blob/master/sc-1.png) | ![Screenshot2](https://github.com/oussou-dev/CRUDapp/blob/master/sc-2.png) | ![Screenshot3](https://github.com/oussou-dev/CRUDapp/blob/master/sc-3.png) |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-|                                                                            |                                                                            |                                                                            |
+| ![Screenshot1](https://github.com/oussou-dev/groceryList/blob/master/sc-1.png) | ![Screenshot2](https://github.com/oussou-dev/CRUDapp/blob/master/sc-2.png) | ![Screenshot3](https://github.com/oussou-dev/CRUDapp/blob/master/sc-3.png) |
+| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+|                                                                                |                                                                            |                                                                            |
