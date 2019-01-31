@@ -6,11 +6,11 @@ const feedback = document.querySelector(".feedback")
 const listItems = document.querySelector(".list-items")
 const clearBtn = document.querySelector(".clearBtn")
 
-// add event listeners
+//=> *** event listeners
 
+// form
 form.addEventListener("submit", function(e) {
 	e.preventDefault()
-	console.log("hello")
 
 	const value = input.value
 
@@ -19,11 +19,19 @@ form.addEventListener("submit", function(e) {
 	} else {
 		// add item to list
 		addItem(value)
+
 		// add to localStorage
 	}
 })
 
-//=> functions
+// clear btn event listener
+clearBtn.addEventListener("click", function() {
+	while (listItems.children.length > 0) {
+		listItems.removeChild(listItems.children[0])
+	}
+})
+
+//=> *** functions
 
 // show feedback
 function showFeedback(element, text, result) {
