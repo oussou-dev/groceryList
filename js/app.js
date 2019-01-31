@@ -29,6 +29,9 @@ form.addEventListener("submit", function(e) {
 clearBtn.addEventListener("click", function() {
 	while (listItems.children.length > 0) {
 		listItems.removeChild(listItems.children[0])
+
+		// clear local storage
+		clearStorage()
 	}
 })
 
@@ -88,4 +91,9 @@ function addStorage(value) {
 	}
 	items.push(value)
 	localStorage.setItem("grocery-list", JSON.stringify(items))
+}
+
+// clear local storage
+function clearStorage() {
+	localStorage.removeItem("grocery-list")
 }

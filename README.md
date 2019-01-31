@@ -31,10 +31,10 @@ _Note: You may need to add “sudo” in front of any global commands to install
 | ------------------------- | ----------------------------------- |
 | [ ] Adding Bootstrap 4    | [ ] Alert notifications             |
 | [ ] Setting up todos list | [ ] setItem for localStorage        |
-| [ ] Creating todos        | [ ] removeItem for localStorage     |
-| [ ] Deleting todos        | [ ] Display items from localStorage |
-| [ ] Updating todos        | [ ] Adding Font Awesome             |
-| [ ] Clearing all todos    | [ ] Styling app with custom css     |
+| [ ] Create item           | [ ] removeItem for localStorage     |
+| [ ] Delete item           | [ ] Display items from localStorage |
+| [ ] Update item           | [ ] Clear localStorage              |
+| [ ] Clear all items       | [ ] Adding Font Awesome             |
 
 ## ScreenShots
 
