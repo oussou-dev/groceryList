@@ -16,15 +16,47 @@ form.addEventListener("submit", function(e) {
 
 	if (value === "") {
 		showFeedback(feedback, "Can not add empty value", "alert-danger")
+	} else {
+		// add item to list
+		addItem(value)
+		// add to localStorage
 	}
 })
 
-// show feedback
+//=> functions
 
+// show feedback
 function showFeedback(element, text, result) {
 	element.classList.add("showItem", `${result}`)
 	element.innerHTML = `${text}`
 	setTimeout(function() {
 		element.classList.remove("showItem", `${result}`)
 	}, 1500)
+}
+
+// add item
+function addItem(item) {
+	// create a div
+	const div = document.createElement("div")
+	// add class
+	div.classList.add(
+		"item",
+		"my-3",
+		"d-flex",
+		"justify-content-between",
+		"p-2"
+	)
+	// insert html
+	div.innerHTML = `
+       <h5 class="item-title text-capitalize">${item}</h5>
+       <span class="remove-icon text-danger"><i class="fas fa-trash"></i></span>
+    `
+	// add div to listItems
+	listItems.appendChild(div)
+
+	// make input empty
+	input.value = ""
+
+	// show feedback
+	showFeedback(feedback, "item added to the list", "alert-success")
 }
