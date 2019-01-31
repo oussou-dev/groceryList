@@ -31,6 +31,14 @@ clearBtn.addEventListener("click", function() {
 	}
 })
 
+// delete one item
+listItems.addEventListener("click", function(e) {
+	if (e.target.parentElement.classList.contains("remove-icon")) {
+		let parent = e.target.parentElement.parentElement
+		listItems.removeChild(parent)
+	}
+})
+
 //=> *** functions
 
 // show feedback

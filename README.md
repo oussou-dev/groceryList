@@ -2,6 +2,9 @@
 
 ```
 Grocery List with plain JS & Local Storage
+
+<<- by using event propagation ->>
+<<- by handling items with ............ ->>
 ```
 
 [Demo](https://jp865ol643.codesandbox.io/)
